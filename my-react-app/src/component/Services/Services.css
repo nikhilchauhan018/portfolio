@@ -1,0 +1,104 @@
+.services_readmore img{
+width: 50px;
+}
+.services-title img{
+width: 50px;
+background: linear-gradient(264deg,#1e7be4 60.65%, rgb(238, 84, 161,100%));
+position: absolute;
+bottom: 0;
+right: 0;
+z-index: -1;
+}
+.Services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 170px;
+    gap: 80px;
+}
+.services-title {
+    position: relative;
+
+}
+.services-title  h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-family: 600;
+}
+.services-format{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px;
+    border-radius: 10px;
+    border:2px solid white ;
+    transition: 0.4s;
+    cursor: pointer
+}
+.services-container{
+    display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ gap: 20px;
+}
+.services-format h3{
+    font-size: 28px;
+    font-family: 600px;
+}
+.services-format h2{
+    font-size: 38px;
+    font-weight: 700;
+    background: linear-gradient(270deg,#df890d 50%,#b415b4 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.services-format p{
+    color: #d4d4d4;
+    font-size: 24px;
+    line-height: 40px;
+   max-width: 300px;
+}
+.services_readmore{
+display: flex;
+gap: 20px;
+align-items: center;
+margin-top: 20px;
+}
+.services-format:hover{
+    border: 2px solid #f731f7;
+    background-image: linear-gradient(45deg,#3f0028,#582300);
+    transform: scale(1.05)
+    ;
+    transition: 0.4s;
+}
+@media (max-width:768px){
+    .Services{
+        align-items: start;
+        gap: 70px;
+        margin: 20px 70px;
+
+    }
+    .services-title h1{
+        padding: 0;
+        font-size: 50px;
+    }
+    .services-format{
+        gap: 20px;
+        padding: 32px;
+
+    }
+    .services-format h2{
+        font-size: 28px;
+    }
+    .services-format p{
+        font-size: 18px;
+        max-width: 300px;
+        line-height: 32px;
+    }
+   
+    .services-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
